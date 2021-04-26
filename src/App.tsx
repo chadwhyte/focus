@@ -1,13 +1,12 @@
 import React, { FC } from 'react';
 import './App.css';
+import VideoList from './components/video-list';
 
-export const App: FC<{}> = () => {
+const App: FC<{}> = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          TODO
-        </p>
+        <VideoList />
       </header>
     </div>
   );
