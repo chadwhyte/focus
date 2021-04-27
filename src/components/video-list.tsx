@@ -1,4 +1,5 @@
 import React, { FC, useEffect, useState } from 'react';
+import Video from './video';
 
 const VideoList : FC<{}> = () => {
     const [videos, setVideos] = useState([0]);
@@ -9,13 +10,11 @@ const VideoList : FC<{}> = () => {
     return (
         <div>
             <h1>Videos</h1>
-            <ul>
-                {videos.map((video) => {
-                    return (
-                        <li>{`video ${video}`}</li>
-                    );
-                })}            
-            </ul>
+            {videos.map((video) => {
+                return (
+                    <Video name={video.toString()} />
+                );
+            })}            
         </div>
     );
 }
