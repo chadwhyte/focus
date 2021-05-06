@@ -5,11 +5,9 @@ import VideoList from './components/video-list';
 
 const App: FC<{}> = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Login />
-        <VideoList />
-      </header>
+    <div className="app">
+      <Login />
+      <VideoList />
     </div>
   );
 }
